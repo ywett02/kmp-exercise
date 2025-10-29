@@ -42,3 +42,7 @@ kotlin {
         val jsTest by getting
     }
 }
+
+tasks.named("test") {
+    dependsOn("jsTest")
+}
